@@ -1,0 +1,181 @@
+Pour le corrigé que vous avez fourni, cela semble être une question d'examen ou d'exercice sur ASP.NET MVC. Il demande de réaliser un menu dans une application MVC, ainsi qu'une calculette de prix TTC.
+
+Commençons par traiter l'exercice 1, puis nous passerons à l'exercice 2.
+
+**Exercice 1: Création d'un projet en suivant le modèle MVC4 (4 points)**
+
+1. **Créez le projet web en suivant le modèle MVC4 (Vente des produits) :**
+   - Ouvrez Visual Studio.
+   - Sélectionnez "Créer un nouveau projet".
+   - Choisissez "Application web ASP.NET MVC".
+   - Donnez un nom à votre projet (par exemple, "VenteProduits") et cliquez sur "Créer".
+
+2. **Réalisez le menu suivant :**
+   - Ouvrez le fichier "_Layout.cshtml" situé dans le dossier "Views/Shared".
+   - Ajoutez le code suivant à l'intérieur de la balise `<nav>` :
+
+```html
+<ul id="menu">
+    <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
+    <li>@Html.ActionLink("A propos de", "About", "Home")</li>
+    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    <li>@Html.ActionLink("Nos produits", "Produits", "Home")</li>
+    <li>@Html.ActionLink("Nos services", "Services", "Home")</li>
+</ul>
+```
+
+3. **Mettez en place les contrôleurs relativement aux liens du menu :**
+   - Créez les contrôleurs correspondants aux actions mentionnées dans les liens du menu ("Home", "Produits", "Services", etc.).
+   - Chaque action renverra une vue correspondante.
+
+4. **Créez pour chaque lien une vue reflétant la sémantique du lien :**
+   - Pour chaque action dans les contrôleurs, créez une vue correspondante dans le dossier "Views".
+
+---
+
+Maintenant, passons à l'exercice 2 :
+
+**Exercice 2: Création d'une calculette de prix TTC (4 points)**
+
+1. **Créer un formulaire permettant de calculer le montant HT et TTC d'une commande d'un produit à partir du nom de produit, prix unitaire, quantité et TVA :**
+   - Dans le dossier "Views", créez un nouveau dossier nommé "Calculette".
+   - À l'intérieur de ce dossier, créez une nouvelle vue nommée "CalculPrixTTC.cshtml".
+
+2. **Créer le formulaire HTML dans la vue "CalculPrixTTC.cshtml" :**
+   - Ajoutez le formulaire avec les champs pour le nom du produit, le prix unitaire, la quantité et la TVA.
+
+3. **Ajoutez du code pour gérer le calcul du montant HT et TTC :**
+   - Dans le contrôleur associé (par exemple, HomeController), ajoutez une action pour gérer le formulaire de calcul.
+   - Dans cette action, récupérez les données du formulaire, effectuez le calcul du montant HT et TTC, puis passez les résultats à la vue.
+
+4. **Affichez les résultats dans la vue :**
+   - Modifiez la vue "CalculPrixTTC.cshtml" pour afficher les résultats du calcul du montant HT et TTC.
+
+---
+
+Ces instructions devraient vous aider à aborder ces exercices en ASP.NET MVC pas à pas, même en tant que débutant. Si vous avez des questions sur des étapes spécifiques ou si vous avez besoin de plus d'explications, n'hésitez pas à demander !
+
+********************************************************************************
+D'accord, partons de zéro et créons un projet ASP.NET MVC qui répond à l'exercice que vous avez donné. Nous allons diviser cela en plusieurs étapes pour une meilleure compréhension.
+
+**Étape 1: Création du projet ASP.NET MVC**
+
+1. Ouvrez Visual Studio.
+2. Sélectionnez "Créer un nouveau projet".
+3. Choisissez "Application web ASP.NET MVC".
+4. Nommez votre projet "CalculettePrixTTC" et cliquez sur "Créer".
+
+Maintenant, nous avons un projet ASP.NET MVC vide prêt à être utilisé.
+
+**Étape 2: Création du modèle (Model)**
+
+Le modèle représente les données de notre application. Dans ce cas, il représentera les informations nécessaires pour calculer le prix TTC.
+
+1. Dans l'Explorateur de solutions, faites un clic droit sur le dossier "Models".
+2. Sélectionnez "Ajouter une classe".
+3. Nommez la classe "CommandeProduit.cs".
+4. Dans cette classe, définissez les propriétés nécessaires pour représenter une commande de produit. Par exemple :
+
+```csharp
+using System;
+
+namespace CalculettePrixTTC.Models
+{
+    public class CommandeProduit
+    {
+        public string NomProduit { get; set; }
+        public decimal PrixUnitaire { get; set; }
+        public int Quantite { get; set; }
+        public decimal TVA { get; set; }
+    }
+}
+```
+
+**Étape 3: Création du contrôleur (Controller)**
+
+Le contrôleur gère les interactions entre le modèle et la vue. Il reçoit les demandes de l'utilisateur, interagit avec le modèle et renvoie les résultats à la vue.
+
+1. Dans l'Explorateur de solutions, faites un clic droit sur le dossier "Controllers".
+2. Sélectionnez "Ajouter un contrôleur MVC".
+3. Nommez le contrôleur "CalculetteController" et cliquez sur "Ajouter".
+
+Dans ce contrôleur, nous allons ajouter deux actions : une pour afficher le formulaire de calcul et une autre pour effectuer le calcul.
+
+```csharp
+using System;
+using System.Web.Mvc;
+using CalculettePrixTTC.Models;
+
+namespace CalculettePrixTTC.Controllers
+{
+    public class CalculetteController : Controller
+    {
+        // GET: /Calculette/Index
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        // POST: /Calculette/Calculer
+        [HttpPost]
+        public ActionResult Calculer(CommandeProduit commande)
+        {
+            // Effectuer le calcul du prix TTC
+            decimal montantHT = commande.PrixUnitaire * commande.Quantite;
+            decimal montantTTC = montantHT * (1 + commande.TVA / 100);
+
+            ViewBag.MontantHT = montantHT;
+            ViewBag.MontantTTC = montantTTC;
+
+            return View("Resultat");
+        }
+    }
+}
+```
+
+**Étape 4: Création de la vue (View)**
+
+La vue est responsable de l'interface utilisateur. Nous allons créer deux vues : une pour afficher le formulaire de calcul et une autre pour afficher les résultats.
+
+1. Dans l'Explorateur de solutions, faites un clic droit sur le dossier "Views".
+2. Créez un nouveau dossier nommé "Calculette".
+3. À l'intérieur de ce dossier, créez deux vues : "Index.cshtml" et "Resultat.cshtml".
+
+**Index.cshtml**
+
+```html
+@model CalculettePrixTTC.Models.CommandeProduit
+
+@using (Html.BeginForm("Calculer", "Calculette", FormMethod.Post))
+{
+    <div>
+        <label for="NomProduit">Nom Produit:</label>
+        @Html.TextBoxFor(model => model.NomProduit)
+    </div>
+    <div>
+        <label for="PrixUnitaire">Prix Unitaire:</label>
+        @Html.TextBoxFor(model => model.PrixUnitaire)
+    </div>
+    <div>
+        <label for="Quantite">Quantité:</label>
+        @Html.TextBoxFor(model => model.Quantite)
+    </div>
+    <div>
+        <label for="TVA">TVA:</label>
+        @Html.TextBoxFor(model => model.TVA)
+    </div>
+    <button type="submit">Calculer</button>
+}
+```
+
+**Resultat.cshtml**
+
+```html
+<div>
+    <h2>Résultat du calcul :</h2>
+    <p>Montant HT : @ViewBag.MontantHT</p>
+    <p>Montant TTC : @ViewBag.MontantTTC</p>
+</div>
+```
+
+Cela complète la mise en place du projet ASP.NET MVC pour la calculette de prix TTC. Vous pouvez maintenant exécuter l'application pour voir le formulaire de calcul en action.

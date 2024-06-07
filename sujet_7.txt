@@ -1,0 +1,36 @@
+Voici le corrigé pour l'examen ASP.NET :
+
+---
+
+**ESGAE - EXAMENS DE FIN DU 2 SEMESTRE**
+
+---
+
+**Maner ASP.NET**
+
+---
+
+**CM (5 points)**
+
+1. Le sigle ASP est une abréviation du terme anglais qui signifie :
+   **B. Active Server Page**
+
+2. ASP est une technologie développée par :
+   **B. Microsoft**
+
+3. Le principe fondamental d'ASP.NET :
+   **A. Est de considérer une page Web non plus comme un document HTML mais comme une interface graphique classique d'application.**
+
+4. ASP.NET est une technologie ayant de bons IDE facilitant le développement et le débogage des applications, comme :
+   **B. Visual Studio**
+
+5. ASP.NET est une technologie qui repose sur des pages :
+   **A. Compilées, des contrôles prédéfinis et un mécanisme de gestion événementielle**
+
+---
+
+**En cas de fraude, tout votre semestre sera annulé, la note 00/20 vous sera attribuée automatiquement à toutes les épreuves du 2e semestre.**
+
+---
+
+Ce corrigé couvre les questions posées dans l'examen ASP.NET. Si vous avez d'autres questions ou besoin d'explications supplémentaires, n'hésitez pas à demander !

@@ -1,0 +1,55 @@
+Voici le corrigé pour l'examen d'Administration Windows :
+
+---
+
+**ESGAE - Benke Prirure de Gestion et d'Administration des Systèmes**
+
+**EXAMENS DE FIN DU 2 SEMESTRE**
+
+---
+
+**Classe : Danie**
+
+**ADMINISTRATION WINDOWS - LPSI-(ABD & GL)**
+
+**Sujet :**
+
+1. **Qu'est-ce qu'une unité d'organisation ? A quoi cela peut-il être utilisé ? Quelle différence entre groupes et unités d'organisation ? (2 pts)**
+
+   Réponse : Une unité d'organisation (OU) est une structure utilisée dans les systèmes d'annuaire tels que Active Directory pour organiser et gérer des objets tels que des utilisateurs, des groupes et des ordinateurs. Elle peut être utilisée pour hiérarchiser les objets dans un domaine et appliquer des stratégies de groupe à des ensembles spécifiques d'utilisateurs ou d'ordinateurs. La principale différence entre les groupes et les unités d'organisation est que les groupes sont utilisés pour regrouper des utilisateurs pour simplifier la gestion des autorisations et des stratégies de groupe, tandis que les unités d'organisation sont utilisées pour organiser et structurer les objets dans un domaine.
+
+2. **Scénario : Dans un domaine Windows 2012... (2 pts)**
+
+   Réponse : Pour mettre en place cette politique :
+   - Créez une unité d'organisation distincte pour les étudiants et les enseignants.
+   - Appliquez une stratégie de groupe à l'unité d'organisation des étudiants pour empêcher les étudiants de changer leur mot de passe.
+   - Configurez une stratégie de groupe pour permettre aux étudiants de réinitialiser les mots de passe des autres étudiants.
+   - Appliquez une stratégie de groupe à l'ensemble du domaine pour supprimer la commande « Exécuter » du menu Démarrer pour les étudiants et les enseignants.
+
+3. **Quels services doivent être disponibles sur un réseau avant d'exécuter les services d'installation à distance ? (1 pt)**
+
+   Réponse : Avant d'exécuter les services d'installation à distance, les services DHCP (Dynamic Host Configuration Protocol) et TFTP (Trivial File Transfer Protocol) doivent être disponibles sur le réseau.
+
+4. **Vous disposez d'un ordinateur... (2 pts)**
+
+   Réponse : Si vous n'êtes pas certain que l'ordinateur réponde aux exigences pour une installation à distance via Net PC ou PXE, une autre méthode d'installation à distance serait d'utiliser une image ISO amorçable via un lecteur de CD ou une clé USB.
+
+5. **Vous avez engagé un nouvel employé... (2 pts)**
+
+   Réponse : Les tâches quotidiennes de cet employé pourraient inclure la surveillance des performances du serveur, la gestion des comptes utilisateur, la sauvegarde et la restauration de données, l'installation de logiciels et les mises à jour de sécurité. Le rôle d'Active Directory dans Windows 2012 est de fournir des services d'annuaire pour la gestion centralisée des ressources réseau et des utilisateurs.
+
+6. **Donnez une définition des sites et des domaines... (2 pts)**
+
+   Réponse : Un site dans Active Directory est une collection de réseaux IP physiquement connectés. Un domaine est une unité d'organisation logique qui regroupe un ensemble de ressources réseau et d'objets d'annuaire. La principale différence entre les sites et les domaines est que les sites sont basés sur la topologie réseau physique, tandis que les domaines sont basés sur des frontières de sécurité et de gestion.
+
+7. **Quelles sont les arborescences et les forêts... (2 pts)**
+
+   Réponse : Une arborescence Active Directory est une hiérarchie de domaines liés entre eux, tandis qu'une forêt Active Directory est un ensemble de domaines qui partagent une relation de confiance commune. Les arborescences et les forêts partagent des caractéristiques telles que la réplication des données et les relations de confiance, mais une forêt peut contenir plusieurs arborescences.
+
+8. **Quelles sont les fonctions offertes par un système DNS... (2 pts)**
+
+   Réponse : Un système DNS sur un réseau exécutant Active Directory fournit une résolution de nom pour les clients et les serveurs, permettant ainsi la localisation des ressources réseau et la communication entre les différents services et machines.
+
+9. **Lors de la première installation d'Active Directory... (2 pts)**
+
+   Réponse : Lors de la première installation d'Active Directory sur un réseau Windows 2012, il s'agit généralement d'un nouveau domaine, également appelé domaine principal.

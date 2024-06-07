@@ -1,0 +1,67 @@
+Voici le corrigé de l'examen "FRAMEWORK PYTHON" pour la classe LPSIR-GL :
+
+### 1. Que sont les jetons CSRF dans Django ?
+Les jetons CSRF (Cross-Site Request Forgery) sont des tokens utilisés pour protéger les applications web contre les attaques de falsification de requêtes intersites. Django les utilise pour s'assurer que les formulaires soumis proviennent de l'application web et non d'une source malveillante. Le jeton CSRF est inclus dans les formulaires et vérifié à chaque soumission.
+
+### 2. Comment interrogeriez-vous tous les éléments de la table de la base de données ?
+Pour interroger tous les éléments d'une table de la base de données dans Django, on utilise le gestionnaire d'objets (ORM) de Django. Par exemple, pour un modèle `Article`, on utilise :
+```python
+articles = Article.objects.all()
+```
+
+### 3. Qu'est-ce que la racine multimédia ?
+La racine multimédia (`MEDIA_ROOT`) est le répertoire sur le serveur où Django stocke les fichiers téléchargés par les utilisateurs (comme les images, les documents, etc.). La variable `MEDIA_ROOT` est définie dans le fichier `settings.py` de Django.
+
+### 4. Que sont les fichiers statiques ?
+Les fichiers statiques sont des fichiers qui ne changent pas fréquemment et sont utilisés pour le style et la fonctionnalité des pages web, comme les CSS, JavaScript, images, etc. Ils sont généralement placés dans un répertoire spécifique (`STATIC_ROOT`) et servis aux clients tels quels.
+
+### 5. Quel système de base de données préférez-vous utiliser et comment pouvons-nous configurer la base de données dans l'application Django ?
+Préférence personnelle pour le système de base de données peut varier, mais PostgreSQL est souvent préféré pour ses fonctionnalités avancées et sa robustesse. Pour configurer PostgreSQL dans Django, on modifie le fichier `settings.py` :
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nom_de_la_base_de_donnees',
+        'USER': 'nom_utilisateur',
+        'PASSWORD': 'mot_de_passe',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+```
+
+### 6. Comment pouvez-vous inclure et hériter des fichiers dans votre application?
+Django permet l'héritage et l'inclusion de templates pour réutiliser le code HTML. Pour inclure un fichier, on utilise `{% include "fichier.html" %}`. Pour hériter, on utilise `{% extends "base.html" %}` et on définit des blocs `{% block contenu %}{% endblock %}`.
+
+### 7. Django Templating Language : que signifient les accolades doubles et qu'est-ce que cela signifie avec les signes de pourcentage ? (L'étudiant(e) peut montrer un exemple de cela)
+- Les accolades doubles `{{ ... }}` sont utilisées pour l'insertion de variables dans les templates. Par exemple : `<h2>{{ name }}</h2>` affiche la valeur de la variable `name`.
+- Les signes de pourcentage `{% ... %}` sont utilisés pour les balises de contrôle de flux comme les boucles et les conditions. Par exemple :
+```html
+{% if user.is_authenticated %}
+  <p>Bienvenue, {{ user.username }}!</p>
+{% else %}
+  <p>Vous n'êtes pas connecté.</p>
+{% endif %}
+```
+
+### 8. Où stockons-nous les modèles ?
+Les modèles sont stockés dans le fichier `models.py` à l'intérieur de chaque application Django.
+
+### 9. Que font les commandes suivantes ?
+- `python manage.py makemigrations` : Crée de nouvelles migrations basées sur les modifications apportées aux modèles.
+- `python manage.py migrate` : Applique et synchronise les migrations avec la base de données, mettant à jour son schéma.
+
+### 10. Que sont les formats d'URL ?
+Les formats d'URL définissent la structure des URL dans une application Django. Ils sont spécifiés dans le fichier `urls.py` et peuvent inclure des expressions régulières pour capturer les paramètres. Par exemple :
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('article/<int:id>/', views.article_detail, name='article_detail'),
+]
+```
+
+**NB : Utilisez le sujet en lieu et place de la feuille de copie.**
+
+Ce corrigé présente les réponses attendues pour chaque question, couvrant les concepts clés du framework Python Django.

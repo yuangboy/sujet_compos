@@ -1,0 +1,50 @@
+Voici le corrigé pour le questionnaire sur ASP.NET :
+
+---
+
+**Questionnaire: ASP.NET**
+
+---
+
+1. ASP.NET est une technologie qui se repose sur des pages :
+   **B. Compilées, des contrôles prédéfinis et un mécanisme de gestion événementielle**
+
+2. Toutes les pages (web forms) ASP.NET comportent trois parties :
+   **A. La directive, Les éléments HTML, Les contrôles serveur ASP.NET**
+
+3. Comme pour une interface client classique, le développement d'une page ASP.NET se déroule en deux phases distinctes :
+   **C. La conception de la maquette et la réalisation de la cinématique**
+
+4. Le traceur est une fonctionnalité qui nous permet de voir ce qui se passe :
+   **B. À l'intérieur d'une application ASP.NET au moment de l'exécution.**
+
+5. Les règles CSS peuvent être définies de trois manières dans une page HTML statique :
+   **A. Directement dans chaque composant HTML, Dans chaque HTML, Dans un fichier séparé.**
+
+6. ADO.NET est un nom commercial qui désigne un ensemble de classes utilisées pour communiquer avec :
+   **A. Des sources de données et manipuler des données**
+
+---
+
+**Questionnaire: Compréhension du cours (3 points)**
+
+1. Définissez les termes suivants :
+   a. ASP.NET : ASP.NET est un framework de développement web développé par Microsoft. Il permet de construire des applications web dynamiques en utilisant des langages de programmation tels que C# ou VB.NET.
+   b. IIS : IIS (Internet Information Services) est un serveur web développé par Microsoft pour les systèmes d'exploitation Windows. Il est utilisé pour héberger des sites web et des applications web ASP.NET.
+
+2. Qu'aviez-vous besoin pour réaliser une application web avec ASP.NET ? et un exemple pour chaque élément :
+   - Pour réaliser une application web avec ASP.NET, vous avez besoin :
+     - D'un éditeur de texte ou d'un environnement de développement intégré (IDE) tel que Visual Studio.
+     - D'un serveur web pour héberger votre application, tel que IIS.
+     - D'une compréhension des concepts de base de ASP.NET, y compris la structure de la page web, les contrôles serveur, etc.
+
+3. Voici le code du menu par défaut d'un projet MVC : 
+   *(Exemple de code du menu non fourni)*
+
+---
+
+**Attention! En cas de fraude, tous vos DST seront annulés, la note 00/20 vous sera attribuée automatiquement à toutes les épreuves des DST.**
+
+---
+
+Ce corrigé couvre les questions posées dans le questionnaire sur ASP.NET. Si vous avez d'autres questions ou besoin d'explications supplémentaires, n'hésitez pas à demander !

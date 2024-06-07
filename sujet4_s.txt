@@ -1,0 +1,47 @@
+Voici le corrigé de l'examen "ASP.NET" pour la classe LPSIR-GL :
+
+### Partie 1 : Choix multiples
+
+1. **Toutes les pages (web forms) ASP.NET comportent trois parties :**
+   - **R** : L'entête, Les éléments HTML, Les contrôles serveur ASP.NET
+
+2. **Comme pour une interface client classique, le développement d'une page ASP.NET se déroule en deux phases distinctes :**
+   - **C** : La conception de la maquette et la réalisation de la cinématique
+
+3. **Les règles CSS peuvent être définies de trois manières dans une page HTML :**
+   - **A** : Directement dans chaque composant HTML, Dans un fichier séparé, Dans chaque HTML
+
+4. **Runat: Cet attribut permet :**
+   - **A** : De spécifier où le traitement du composant doit être fait.
+
+5. **TextBox (zone d'édition) : Une zone d'édition est une zone de texte qui peut être modifiée par :**
+   - **B** : L'utilisateur
+
+### Partie 2 : Compréhension du cours (4 points)
+
+1. **Définissez les termes suivants :**
+   - **a. ADO.NET :** ADO.NET (ActiveX Data Objects for .NET) est un ensemble de classes dans le .NET Framework qui permet l'accès aux services de données et est conçu pour être utilisé avec des bases de données relationnelles. Il fournit une méthode cohérente pour accéder aux données et les manipuler depuis différentes sources de données (bases de données SQL, XML, etc.).
+   - **b. IIS :** IIS (Internet Information Services) est un serveur web extensible créé par Microsoft pour les systèmes d'exploitation Windows. Il est utilisé pour héberger et fournir des services web tels que les applications ASP.NET et les sites web.
+
+2. **Quel est en ASP.NET l'instance qui implémente la connexion à la base de données ?**
+   - L'instance qui implémente la connexion à la base de données en ASP.NET est généralement l'objet `SqlConnection` de la bibliothèque ADO.NET.
+
+3. **Qu'aviez-vous besoin pour réaliser une application web avec du ASP.Net ? et un exemple pour chaque élément.**
+   - **a. Un environnement de développement intégré (IDE) :** Par exemple, Visual Studio, qui offre des outils et des fonctionnalités pour développer, tester et déployer des applications ASP.NET.
+   - **b. Un serveur web :** Par exemple, IIS (Internet Information Services), qui permet d'héberger et de servir les applications ASP.NET.
+   - **c. Un cadre de travail (framework) :** Par exemple, ASP.NET MVC ou ASP.NET Web Forms, qui fournit les bibliothèques et les outils nécessaires pour le développement d'applications web.
+   - **d. Une base de données :** Par exemple, SQL Server, qui stocke les données de l'application et permet leur accès et manipulation via ADO.NET.
+
+4. **Voici le code du menu par défaut d'un projet MVC (inclus pour référence, sans nécessité de correction)**
+   ```html
+   <!-- Example of a default menu code in an MVC project -->
+   <ul>
+       <li>@Html.ActionLink("Home", "Index", "Home")</li>
+       <li>@Html.ActionLink("About", "About", "Home")</li>
+       <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+   </ul>
+   ```
+
+**NB : Utilisez le sujet en lieu et place de la feuille de copie.**
+
+Ce corrigé présente les réponses attendues pour chaque question, couvrant les concepts clés de l'ASP.NET.

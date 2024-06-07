@@ -1,0 +1,140 @@
+Voici le corrigé de l'examen en matière de "Business Plan" pour le cours LPSIR-GL de l'E.S.G.A.E. :
+
+**Examen de la 2ème session**
+
+**Durée : 11:30**
+
+**Documents autorisés : aucun**
+
+Ne cochez pas de mauvaise réponse, car une mauvaise réponse cochée annule la question (6 pts) :
+
+1. Le business plan, c'est :
+   - le programme d'activités
+
+2. Le business plan :
+   - est un dossier d'une vingtaine de pages qui présente le projet en détail
+   - permet de lever les capitaux nécessaires au lancement
+
+3. À quoi sert un business plan ?
+   - à présenter un dossier performant aux futurs partenaires
+   - s'assurer qu'aucun élément n'a été omis dans la construction du projet
+
+4. Un Business Plan répond :
+   - à des objectifs bien déterminés qui sont les mêmes que les objectifs assimilés à la création d'une entreprise
+
+
+Pour remplir le Business Model Canvas pour un projet fictif, supposons que le projet soit la création d'une application de livraison de repas sains appelée "HealthyBites". Voici le corrigé correspondant :
+
+**Business Model Canvas : HealthyBites**
+
+| Partenaires clés              | Activités clés               | Proposition de valeur                                  |
+|-------------------------------|------------------------------|-------------------------------------------------------|
+| - Restaurants partenaires     | - Développement de l'application | - Livraisons de repas sains et équilibrés              |
+| - Fournisseurs d'ingrédients  | - Gestion des commandes      | - Interface utilisateur facile à utiliser             |
+| - Livreurs indépendants       | - Marketing et promotion     | - Livraison rapide et fiable                          |
+| - Entreprises locales         | - Support client             | - Options de repas personnalisables                   |
+| - Développeurs                | - Gestion des partenariats   | - Fraîcheur et qualité des ingrédients                |
+
+| Relations avec les clients    | Segments de clients          | Canaux                                                |
+|-------------------------------|------------------------------|-------------------------------------------------------|
+| - Support client 24/7         | - Professionnels occupés     | - Application mobile                                  |
+| - Programmes de fidélité      | - Familles                   | - Site web                                            |
+| - Newsletters                 | - Étudiants                  | - Réseaux sociaux                                     |
+| - Promotions exclusives       | - Sportifs                   | - Publicité en ligne                                  |
+|                               | - Personnes soucieuses de leur santé | - Partenariats avec des entreprises                  |
+
+| Ressources clés               | Structure des coûts          | Flux de revenus                                       |
+|-------------------------------|------------------------------|-------------------------------------------------------|
+| - Développeurs                | - Développement de l'application | - Vente de repas                                      |
+| - Application mobile          | - Marketing et publicité     | - Frais de livraison                                  |
+| - Partenariats avec restaurants | - Salaires des employés     | - Abonnements mensuels                                |
+| - Base de données clients     | - Frais logistiques          | - Offres premium                                      |
+| - Livreurs                    | - Maintenance technique      | - Publicité                                           |
+
+**NB : Utilisez le sujet en lieu et place de la feuille de copie.**
+
+Ce Business Model Canvas présente de manière succincte les principaux éléments de l'application de livraison de repas sains "HealthyBites", en s'appuyant sur les neuf blocs du modèle Canvas.
+
+explication:
+Le Business Model Canvas est un outil stratégique qui permet de décrire, concevoir et analyser un modèle économique. Il se compose de neuf blocs qui couvrent les quatre principales dimensions d'une entreprise : les clients, l'offre, les infrastructures et la viabilité financière. Voici une explication de chaque bloc avec l'exemple de l'application de livraison de repas sains "HealthyBites" :
+
+1. Partenaires clés
+Ce bloc liste les alliances et collaborations importantes pour le bon fonctionnement de l'entreprise.
+
+Exemple :
+Restaurants partenaires : Fournissent les repas.
+Fournisseurs d'ingrédients : Assurent la qualité et la fraîcheur des ingrédients.
+Livreurs indépendants : Réalisent les livraisons.
+Entreprises locales : Pour des partenariats promotionnels.
+Développeurs : Pour la création et la maintenance de l'application.
+2. Activités clés
+Ce bloc décrit les activités essentielles pour que le modèle économique fonctionne.
+
+Exemple :
+Développement de l'application : Conception et mise à jour de l'application mobile.
+Gestion des commandes : Traitement des commandes clients.
+Marketing et promotion : Stratégies pour attirer et retenir les clients.
+Support client : Assistance aux utilisateurs.
+Gestion des partenariats : Relations avec les restaurants et les livreurs.
+3. Proposition de valeur
+Ce bloc présente l'offre de produits ou services qui crée de la valeur pour un segment de clients spécifique.
+
+Exemple :
+Livraisons de repas sains et équilibrés.
+Interface utilisateur facile à utiliser.
+Livraison rapide et fiable.
+Options de repas personnalisables.
+Fraîcheur et qualité des ingrédients.
+4. Relations avec les clients
+Ce bloc décrit le type de relation qu'une entreprise établit avec ses segments de clients.
+
+Exemple :
+Support client 24/7 : Assistance continue.
+Programmes de fidélité : Encouragement à la rétention des clients.
+Newsletters : Information régulière et promotions.
+Promotions exclusives : Offres spéciales pour fidéliser les clients.
+5. Segments de clients
+Ce bloc identifie les différents groupes de personnes ou organisations que l'entreprise vise à atteindre et servir.
+
+Exemple :
+Professionnels occupés.
+Familles.
+Étudiants.
+Sportifs.
+Personnes soucieuses de leur santé.
+6. Canaux
+Ce bloc décrit comment une entreprise communique et atteint ses segments de clients pour fournir une proposition de valeur.
+
+Exemple :
+Application mobile.
+Site web.
+Réseaux sociaux.
+Publicité en ligne.
+Partenariats avec des entreprises.
+7. Ressources clés
+Ce bloc indique les actifs indispensables pour faire fonctionner le modèle économique.
+
+Exemple :
+Développeurs : Compétences techniques.
+Application mobile : Plateforme de service.
+Partenariats avec restaurants.
+Base de données clients.
+Livreurs.
+8. Structure des coûts
+Ce bloc décrit tous les coûts engagés pour faire fonctionner un modèle économique.
+
+Exemple :
+Développement de l'application.
+Marketing et publicité.
+Salaires des employés.
+Frais logistiques.
+Maintenance technique.
+9. Flux de revenus
+Ce bloc explique comment l'entreprise génère des revenus à partir de chaque segment de clients.
+
+Exemple :
+Vente de repas.
+Frais de livraison.
+Abonnements mensuels : Offres premium pour services additionnels.
+Publicité : Revenus provenant de partenaires publicitaires.
+En utilisant le Business Model Canvas, "HealthyBites" peut clairement voir et communiquer comment chaque composant de leur entreprise interagit et contribue à leur succès global.

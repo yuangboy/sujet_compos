@@ -1,0 +1,119 @@
+Pour créer une calculette de prix TTC en ASP.NET C#, nous allons suivre ces étapes :
+
+1. **Création du projet ASP.NET Web Forms** :
+   - Ouvrez Visual Studio.
+   - Sélectionnez "Créer un nouveau projet".
+   - Choisissez "ASP.NET Web Forms Application".
+   - Donnez un nom à votre projet et cliquez sur "Créer".
+
+2. **Ajout d'une page web** :
+   - Dans l'Explorateur de solutions, faites un clic droit sur le dossier "Pages" ou "Web Forms" (selon votre version de Visual Studio).
+   - Sélectionnez "Ajouter une nouvelle page web".
+   - Nommez votre page "CalculettePrixTTC.aspx" et cliquez sur "Ajouter".
+
+3. **Conception de l'interface utilisateur** :
+   - Ouvrez le fichier "CalculettePrixTTC.aspx".
+   - Créez l'interface en utilisant des balises HTML et des contrôles ASP.NET, en vous basant sur le contenu fourni dans l'énoncé.
+
+4. **Ajout du code-behind** :
+   - Ouvrez le fichier "CalculettePrixTTC.aspx.cs".
+   - Implémentez les méthodes pour gérer les événements des boutons "Calculer" et "Annuler".
+
+Voici le code pour la page ASP.NET et son code-behind :
+
+Fichier `CalculettePrixTTC.aspx` :
+
+```aspx
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CalculettePrixTTC.aspx.cs" Inherits="VotreNamespace.CalculettePrixTTC" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Calculette de prix TTC</title>
+    <style>
+        /* Ajoutez vos styles CSS ici si nécessaire */
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1>Calculette de prix TTC</h1>
+        <div>
+            <label for="nomProduit">Nom Produit:</label>
+            <asp:TextBox ID="txtNomProduit" runat="server"></asp:TextBox>
+            <br /><br />
+            <label for="prixUnitaire">Prix Unitaire:</label>
+            <asp:TextBox ID="txtPrixUnitaire" runat="server" TextMode="Number"></asp:TextBox>
+            <br /><br />
+            <label for="quantite">Quantité:</label>
+            <asp:TextBox ID="txtQuantite" runat="server" TextMode="Number"></asp:TextBox>
+            <br /><br />
+            <label for="tva">TVA:</label>
+            <asp:TextBox ID="txtTVA" runat="server" TextMode="Number"></asp:TextBox>
+            <br /><br />
+            <asp:Button ID="btnCalculer" runat="server" Text="Calculer" OnClick="btnCalculer_Click" />
+            <br /><br />
+            <asp:Button ID="btnAnnuler" runat="server" Text="Annuler" OnClick="btnAnnuler_Click" />
+            <br /><br />
+            <asp:Label ID="lblMontantCommande" runat="server" Text=""></asp:Label>
+        </div>
+    </form>
+</body>
+</html>
+```
+
+Fichier `CalculettePrixTTC.aspx.cs` (code-behind) :
+
+```csharp
+using System;
+using System.Web.UI;
+
+namespace VotreNamespace
+{
+    public partial class CalculettePrixTTC : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // Vous pouvez ajouter des actions à exécuter lors du chargement de la page si nécessaire
+        }
+
+        protected void btnCalculer_Click(object sender, EventArgs e)
+        {
+            // Vérification des champs obligatoires
+            if (string.IsNullOrEmpty(txtNomProduit.Text) || string.IsNullOrEmpty(txtPrixUnitaire.Text) || string.IsNullOrEmpty(txtQuantite.Text) || string.IsNullOrEmpty(txtTVA.Text))
+            {
+                lblMontantCommande.Text = "Tous les champs sont obligatoires !!!";
+                return;
+            }
+
+            // Conversion des valeurs saisies en nombres
+            double prixUnitaire, quantite, tva;
+            if (!double.TryParse(txtPrixUnitaire.Text, out prixUnitaire) || !double.TryParse(txtQuantite.Text, out quantite) || !double.TryParse(txtTVA.Text, out tva))
+            {
+                lblMontantCommande.Text = "Veuillez saisir des valeurs numériques valides pour le prix unitaire, la quantité et la TVA.";
+                return;
+            }
+
+            // Calcul du prix HT et du prix TTC
+            double prixHT = prixUnitaire * quantite;
+            double prixTTC = prixHT * (1 + tva / 100);
+
+            // Affichage du montant de la commande
+            lblMontantCommande.Text = $"Montant de la commande : <br />Prix HT: {prixHT} <br />Prix TTC : {prixTTC}";
+        }
+
+        protected void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            // Réinitialisation des champs
+            txtNomProduit.Text = "";
+            txtPrixUnitaire.Text = "";
+            txtQuantite.Text = "";
+            txtTVA.Text = "";
+            lblMontantCommande.Text = "";
+        }
+    }
+}
+```
+
+Assurez-vous de remplacer `"VotreNamespace"` par le namespace approprié pour votre application. Ce code vous permettra de créer une page web avec une calculette de prix TTC fonctionnelle en ASP.NET C#.
